@@ -5,7 +5,7 @@
 
 '(Problem 1. Rewrite expressions in Racket)
 
-; expression is done in order but value are calculated in their own mini expressions first.
+; expression is done in order but values are calculated in their own mini expressions first.
 '(a: (3 × (5 + (10 ÷ 5))))
 (* 3 (+ 5 (/ 10 5)))
 
@@ -30,5 +30,5 @@
 ;Longest expression of the lot. Used adition first as it doesn't matter if multiplied values are added before
 ; or after expressions on the right side are calculated.
 '(f: (3 + 5) × (10 ÷ 2) + (1 + (5 + (2 + (10 ÷ 3)))))
-; 8 * 5 + 1 + 5 + 2 + 3 1/3 -> above expression simplified to the values it produces
+; 8 * 5 + 1 + 5 + 2 + 3,1/3 -> above expression simplified to the values it produces
 (+ 1 5 2 (/ 10 3) (* (+ 3 5) (/ 10 2)))
